@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>picture change</title>
+<script language="javascript">
+function over(){
+	document.pic1.src="images/latte.jpg";
+	}
+function out(){
+	document.pic1.src="images/brulee.jpg";
+	}
+function big(x){
+	x.style.height="800px";
+	x.style.width="800px";
+	}
+function normal(x){
+	x.style.height="400px";
+	x.style.width="400px"document.pic1.src="images/latte.jpg";
+	}
+
+</script></head>
+
+<body>
+<!--
+<a href="#" onMouseOver="document.pic1.src='images/brulee.jpg'" onMouseOut="document.pic1.src='images/mocha.jpg'">
+<img src="images/brulee.jpg" border="Q" alt="" name="pic1"/>
+-->
+<a href="#" onMouseOver="big(pic1);" onMouseOut="normal(pic1);">
+<img src="images/brulee.jpg" border="0" alt="" name="pic1"/>
+</body>
+</html>
